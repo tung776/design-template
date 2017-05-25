@@ -1,0 +1,92 @@
+/* CSS Document */
+@import 'vendors/_bootstrap.scss';
+//begin framework
+$primary-color: #3B5A76;
+$background-color: #E3DDDD;
+$text-color: #363636;
+$font: "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+$font-size: 16px;
+$line-height: 2;
+
+body {
+	padding-bottom: 0;
+	font-family: $font;
+	color: $text-color!important;
+	font-size: $font-size;
+	line-height: $line-height;
+	background: $background-color;
+}
+h2 {
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.4em;
+	font-size: 1.5em;
+}
+//end framework
+
+.primary, strong, h2 {
+	color: $primary-color;
+}
+.container-main {
+	background: #FFFFFF;
+	margin-top:80px;
+	padding: 0 30px;
+	border-radius: 20px;
+}
+header {
+	min-height: 100px;
+	overflow: hidden;
+}
+header h1 {
+	margin:0;
+	padding: 20px 0 0 0;
+	font-size: 2.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.4em;
+}
+.profile-img {
+	width: 160px;
+	display: block;
+	margin: auto;
+	margin-top: -80px;
+}
+.line {
+	max-width: 100%;
+}
+contact-list {
+	padding: 0;
+	margin: 0;
+	
+}
+.contact-list li {
+	list-style: none;
+	font-weight: bold;
+	line-height: 3.2em;
+}
+.contact-list img {
+	margin-right: 20px;
+}
+.contact-list li p {
+	font-weight: bold;
+}
+.media {
+	background: $background-color;
+	padding: 10px;
+}
+.media-left, .media > .pull-left {
+	min-width: 100px;
+}
+.work-list li {
+	list-style: none;
+	float:left;
+	padding: 0 10px;
+	margin-bottom: 30px;
+}
+footer p {
+	padding: 15px;
+
+	text-align: center;
+	
+}
