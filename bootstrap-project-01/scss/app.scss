@@ -1,2 +1,53 @@
-/* CSS Document */
-@import 'vendors/_bootstrap.scss';
+//framework
+body {
+	padding: 70px;
+}
+$active-color: #e41b17;
+$link-color:#D9CDCE;
+//end framework
+//customize navbar
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: $active-color;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color:$link-color;
+}
+.navbar-inverse .navbar-brand {
+	color: $link-color;
+}
+.dropdown-menu {
+	background-color: #333333;
+	min-width: 250px;
+}
+.dropdown-menu > li > a {
+	color:$link-color;
+	transition: padding 500ms ease-in-out;
+	-webkit-transition: padding 500ms ease-in-out;
+	-moz-transition: padding 500ms ease-in-out;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	background-color: $active-color;
+	color: $link-color;
+	padding-left: 30px;
+}
+.dropdown-menu .divider {
+	background-color:#530203;
+}
+.navbar-brand span {
+	color: $active-color;
+}
+@media (max-width: 767px) {
+	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+		background-color: $active-color;
+		color: $link-color;
+		padding-left: 30px;
+	}
+	.navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+	background-color:#530203;
+	}
+}
+//end customize navbar
