@@ -1,6 +1,6 @@
 //framework
 body {
-	padding: 70px;
+//	padding: 70px;
 }
 $active-color: #e41b17;
 $link-color:#D9CDCE;
@@ -51,3 +51,16 @@ $link-color:#D9CDCE;
 	}
 }
 //end customize navbar
+//begin carsourel
+.carousel-caption {
+    background-color: rgba(15, 191, 189, 0.17);
+//    bottom: 32%;
+    border-radius: 50px;
+}
+.carousel-caption button {
+	margin-top: 20px;
+}
+.carousel-indicators .active {
+	background-color: $active-color;
+}
+//end carsourel
