@@ -5,6 +5,7 @@ body {
 $active-color: #e41b17;
 $link-color:#D9CDCE;
 $text-color: #3B3A3A;
+$background-color: #D4D0D0;
 //end framework
 //customize navbar
 .navbar-inverse .navbar-nav > .active > a,
@@ -87,7 +88,7 @@ $text-color: #3B3A3A;
 	color: $text-color;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	background-color: #D4D0D0;
+	background-color: $background-color;
 	h1 {
 		margin-bottom: 40px;
 	}
@@ -148,7 +149,46 @@ $text-color: #3B3A3A;
 		li.active {
 			opacity: 1;
 		}
-		
 	}
 }
 //end testimonials
+//beggin section price
+#price {
+	background-color: $background-color;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.price_box {
+		background-color: #E3DFDF;
+		padding: 10px;
+		border: 1px solid #DDD;
+		border-radius: 10px;
+		h3 {
+			margin: 5px 0 15px
+		}
+		p {
+			font-size: 35px;
+			font-weight: bold;
+			color:#666;
+		}
+		button {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		ul {
+			line-height: 2;
+			font-size: 18px;
+			list-style: none;
+			li {
+				.glyphicon {
+					margin-right: 10px;
+					
+				}
+				.glyphicon-ok {
+					margin-left: 10px;
+					color:$active-color;
+				}
+			}
+		}
+	}
+}
+//end section price
