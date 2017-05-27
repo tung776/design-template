@@ -53,6 +53,9 @@ $text-color: #3B3A3A;
 }
 //end customize navbar
 //begin carsourel
+#carousel1{
+	margin-top:51px;
+}
 .carousel-caption {
     background-color: rgba(15, 191, 189, 0.17);
 //    bottom: 32%;
@@ -70,8 +73,82 @@ $text-color: #3B3A3A;
 	margin:60px 0;
 	line-height: 2;
 	color: $text-color;
-	span {
-		color: $active-color;
+	h2 {
+		font-weight: bold;
+		span {
+			color: $active-color;
+		}
 	}
+	
 }
 //end wellcome
+//beggin features
+.features {
+	color: $text-color;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #D4D0D0;
+	h1 {
+		margin-bottom: 40px;
+	}
+	.feat {
+		margin-bottom: 30px;
+		h3 {
+			margin-bottom: 25px;
+		}
+		p {
+			line-height: 2em;
+		}
+		
+		.glyphicon {
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+	}
+}
+//end features
+//begin testimonials
+.testimonials {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.carousel-inner {
+		min-height: 160px;
+	}
+	h1 {
+		font-weight: bold;
+		margin-bottom: 25px;
+	}
+	.lead {
+		line-height: 2em;
+		margin-bottom: 10px;
+	}
+	.item {
+		span {
+			font-size: 18px;
+			font-weight: bold;
+			color: $active-color;
+		}
+	}
+	.carousel-indicators {
+		position: static;
+    	width: 100%;
+    	margin-left: auto;
+		li {
+			text-indent: 0;
+			width: 80px;
+			height: 80px;
+			opacity: 0.5;
+			border: 2px solid $active-color;
+			border-radius: 50%;
+			overflow: hidden;
+			img {
+				max-width: 100%;
+			}
+		}
+		li.active {
+			opacity: 1;
+		}
+		
+	}
+}
+//end testimonials
