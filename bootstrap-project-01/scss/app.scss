@@ -9,6 +9,12 @@ $background-color: #D4D0D0;
 .active-color {
 	color: $active-color!important;
 }
+.overlay {
+
+		width: 100%;
+
+		background-color:rgba(86,85,85,0.7);
+	}
 //end framework
 //customize navbar
 .navbar-inverse .navbar-nav > .active > a,
@@ -94,6 +100,8 @@ $background-color: #D4D0D0;
 	background-color: $background-color;
 	h1 {
 		margin-bottom: 40px;
+		letter-spacing: 5px;
+		font-weight: bold;
 	}
 	.feat {
 		margin-bottom: 30px;
@@ -177,13 +185,18 @@ $background-color: #D4D0D0;
 	background-color: $background-color;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	h1 {
+		letter-spacing: 5px;
+			font-weight: bold;
+	}
 	.price_box {
 		background-color: #E3DFDF;
 		padding: 10px;
 		border: 1px solid #DDD;
 		border-radius: 10px;
 		h3 {
-			margin: 5px 0 15px
+			margin: 5px 0 15px;
+			
 		}
 		.price-infor {
 			padding: 0 30%;
@@ -262,16 +275,144 @@ $background-color: #D4D0D0;
 				color:aliceblue;
 				background-color: rgba(37,36,36,0.7);
 				transition-duration: 500ms;
-			}
-			
+			}			
+		}
+		h2 {
+			letter-spacing: 5px;
+			font-weight: bold;
 		}
 		.person:hover {
-			color:white;
-			
-			
+			color:white;			
 		.fa:hover {
 				background-color:$active-color;
-			}}
+			}
+		}
 	}
 }
 //end section our team
+//begin section subcrible
+#subcrible {
+	padding: 40px 0;
+	background-color: #EEE;
+	h2 {
+		letter-spacing: 2px;
+		color: #888;
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 30px;
+	}
+	form {
+		.form-control {
+			border-radius:0;
+			margin-right: 5px;
+			width: 300px;
+		}
+		button {
+			border-radius: 0;
+			
+		}
+	}
+}
+//end section subcrible
+
+//statistic
+#statistic {
+	
+	min-height: 300px;
+	width: 100%;
+	background: url(../img/stats.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 300px;
+	.overlay {
+		padding: 40px 0;
+		min-height: 300px;
+	}
+	.stats {
+		color: #E5E3E3;
+		-webkit-transition: all 100ms ease-in-out;
+		-moz-transition: all 100ms ease-in-out;
+		transition: all 100ms ease-in-out;
+		p {
+			font-size: 60px;
+			font-weight: 600;
+		}
+		span {
+			font-size: 18px;
+		}
+	}
+	.stats:hover {
+		color:white;
+	}
+	
+	h2 {
+		color: #E5E3E3;
+		padding-bottom: 40px;
+		font-weight: bold;
+		letter-spacing: 5px;
+	}
+}
+//end statistic
+//begin section our-skills
+#our-skill {
+	padding-top: 40px;
+	padding-bottom: 70px;
+	color:#272626;
+	h2 {
+		margin-bottom: 40px;
+		font-weight: bold;
+		color:#272626;
+	}
+	.progress {
+		height: 25px;
+		line-height: 25px;
+		color:#E1DEDE;
+		font-weight: bold;
+		text-indent: 10px;
+	}
+	.skill-infor {
+		h2 {
+			margin-top:0;
+			text-align: center;
+		}
+	}
+}
+//end section our-skills
+//begin contact
+#contact {
+	background: url(../img/contact-us.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-height: 300px;
+	.overlay {
+		min-height: 300px;
+		color: #E9E6E6;
+	}
+}
+//end contact
+//our client
+#our-client{
+	background-color: #CDCDCB;
+	img {
+		opacity: 0.4;
+		filter: alpha(opacity=40);
+		margin-top: 20px;
+		margin-bottom: 20px;
+		transition: all 200ms ease-in-out;
+		-webkit-transition: all 200ms ease-in-out;
+		-moz-transition: all 200ms ease-in-out;
+	}
+	img:hover {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	
+}
+//end our client
+
+
+
+
+

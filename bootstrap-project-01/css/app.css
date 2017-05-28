@@ -1,6 +1,10 @@
 .active-color {
   color: #e41b17 !important; }
 
+.overlay {
+  width: 100%;
+  background-color: rgba(86, 85, 85, 0.7); }
+
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -71,7 +75,9 @@
   padding-bottom: 40px;
   background-color: #D4D0D0; }
   .features h1 {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+    font-weight: bold; }
   .features .feat {
     margin-bottom: 30px; }
     .features .feat h3 {
@@ -131,6 +137,9 @@
   background-color: #D4D0D0;
   padding-top: 40px;
   padding-bottom: 40px; }
+  #price h1 {
+    letter-spacing: 5px;
+    font-weight: bold; }
   #price .price_box {
     background-color: #E3DFDF;
     padding: 10px;
@@ -196,7 +205,96 @@
         color: aliceblue;
         background-color: rgba(37, 36, 36, 0.7);
         transition-duration: 500ms; }
+    #our-team .team h2 {
+      letter-spacing: 5px;
+      font-weight: bold; }
     #our-team .team .person:hover {
       color: white; }
       #our-team .team .person:hover .fa:hover {
         background-color: #e41b17; }
+
+#subcrible {
+  padding: 40px 0;
+  background-color: #EEE; }
+  #subcrible h2 {
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 20px; }
+  #subcrible p {
+    margin-bottom: 30px; }
+  #subcrible form .form-control {
+    border-radius: 0;
+    margin-right: 5px;
+    width: 300px; }
+  #subcrible form button {
+    border-radius: 0; }
+
+#statistic {
+  min-height: 300px;
+  width: 100%;
+  background: url(../img/stats.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 300px; }
+  #statistic .overlay {
+    padding: 40px 0;
+    min-height: 300px; }
+  #statistic .stats {
+    color: #E5E3E3;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out; }
+    #statistic .stats p {
+      font-size: 60px;
+      font-weight: 600; }
+    #statistic .stats span {
+      font-size: 18px; }
+  #statistic .stats:hover {
+    color: white; }
+  #statistic h2 {
+    color: #E5E3E3;
+    padding-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 5px; }
+
+#our-skill {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  color: #272626; }
+  #our-skill h2 {
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #272626; }
+  #our-skill .progress {
+    height: 25px;
+    line-height: 25px;
+    color: #E1DEDE;
+    font-weight: bold;
+    text-indent: 10px; }
+  #our-skill .skill-infor h2 {
+    margin-top: 0;
+    text-align: center; }
+
+#contact {
+  background: url(../img/contact-us.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-height: 300px; }
+  #contact .overlay {
+    min-height: 300px;
+    color: #E9E6E6; }
+
+#our-client {
+  background-color: #CDCDCB; }
+  #our-client img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out; }
+  #our-client img:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); }
