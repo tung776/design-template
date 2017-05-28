@@ -1,3 +1,6 @@
+.active-color {
+  color: #e41b17 !important; }
+
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -77,7 +80,20 @@
       line-height: 2em; }
     .features .feat .glyphicon {
       font-size: 30px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      background-color: #6d6d6b;
+      color: #fff;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      line-height: 100px;
+      transition-duration: 500ms;
+      -webkit-transition-duration: 500ms;
+      -moz-transition-duration: 500ms; }
+  .features .feat:hover {
+    color: black; }
+    .features .feat:hover .glyphicon {
+      background-color: #e41b17; }
 
 .testimonials {
   padding-top: 40px;
@@ -122,19 +138,65 @@
     border-radius: 10px; }
     #price .price_box h3 {
       margin: 5px 0 15px; }
+    #price .price_box .price-infor {
+      padding: 0 30%; }
     #price .price_box p {
       font-size: 35px;
       font-weight: bold;
-      color: #666; }
+      color: #FFFFFF;
+      background-color: #6B6969;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      border-radius: 50%;
+      transition-duration: 700ms;
+      -webkit-transition-duration: 700ms;
+      -moz-transition-duration: 700ms; }
     #price .price_box button {
       margin-top: 10px;
       margin-bottom: 10px; }
     #price .price_box ul {
       line-height: 2;
       font-size: 18px;
-      list-style: none; }
+      list-style: none;
+      padding: 10px; }
       #price .price_box ul li .glyphicon {
         margin-right: 10px; }
       #price .price_box ul li .glyphicon-ok {
-        margin-left: 10px;
         color: #e41b17; }
+  #price .price_box:hover p {
+    transform: scale(1.1, 1.1) rotate(360deg);
+    -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+    -moz-transform: scale(1.1, 1.1) rotate(360deg); }
+
+#our-team {
+  background: url("../img/team.jpg") no-repeat center fixed;
+  width: 100%;
+  min-height: 600px;
+  color: #C3C2C2; }
+  #our-team .team {
+    min-height: 600px;
+    width: 100%;
+    background-color: rgba(91, 79, 79, 0.7);
+    padding: 40px 0; }
+    #our-team .team .person {
+      margin-top: 30px;
+      margin-bottom: 40px; }
+      #our-team .team .person p {
+        font-size: 16px;
+        line-height: 2em; }
+      #our-team .team .person img {
+        width: 200px; }
+      #our-team .team .person .fa {
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        color: aliceblue;
+        background-color: rgba(37, 36, 36, 0.7);
+        transition-duration: 500ms; }
+    #our-team .team .person:hover {
+      color: white; }
+      #our-team .team .person:hover .fa:hover {
+        background-color: #e41b17; }

@@ -6,6 +6,9 @@ $active-color: #e41b17;
 $link-color:#D9CDCE;
 $text-color: #3B3A3A;
 $background-color: #D4D0D0;
+.active-color {
+	color: $active-color!important;
+}
 //end framework
 //customize navbar
 .navbar-inverse .navbar-nav > .active > a,
@@ -104,8 +107,25 @@ $background-color: #D4D0D0;
 		.glyphicon {
 			font-size: 30px;
 			margin-bottom: 10px;
+			background-color: #6d6d6b;
+			color: #fff;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			line-height: 100px;
+			transition-duration: 500ms ;
+			-webkit-transition-duration: 500ms ;
+			-moz-transition-duration: 500ms ;
 		}
+		
 	}
+	.feat:hover {
+		color:black;
+		.glyphicon {
+			background-color: $active-color;
+		}
+		
+	} 
 }
 //end features
 //begin testimonials
@@ -165,10 +185,22 @@ $background-color: #D4D0D0;
 		h3 {
 			margin: 5px 0 15px
 		}
+		.price-infor {
+			padding: 0 30%;
+		}
 		p {
 			font-size: 35px;
 			font-weight: bold;
-			color:#666;
+			color:#FFFFFF;
+			background-color: #6B6969;
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			border-radius: 50%;
+			transition-duration: 700ms;
+			-webkit-transition-duration: 700ms;
+			-moz-transition-duration: 700ms;
+
 		}
 		button {
 			margin-top: 10px;
@@ -178,17 +210,68 @@ $background-color: #D4D0D0;
 			line-height: 2;
 			font-size: 18px;
 			list-style: none;
+			padding: 10px;
 			li {
 				.glyphicon {
 					margin-right: 10px;
 					
 				}
 				.glyphicon-ok {
-					margin-left: 10px;
 					color:$active-color;
 				}
 			}
+			
+		}
+	}
+	.price_box:hover {
+		p {
+			transform: scale(1.1, 1.1) rotate(360deg);
+			-webkit-transform: scale(1.1, 1.1) rotate(360deg);
+			-moz-transform: scale(1.1, 1.1) rotate(360deg);
 		}
 	}
 }
 //end section price
+//beg=gin dextion our team
+#our-team {
+	background: url("../img/team.jpg") no-repeat center fixed;
+	width: 100%;
+	min-height: 600px;
+	color:#C3C2C2;
+	.team {
+		min-height: 600px;
+		width: 100%;
+		background-color:rgba(91,79,79,0.7);
+		padding: 40px 0;
+		.person {
+			margin-top: 30px;
+			margin-bottom: 40px;
+			p {
+				font-size: 16px;
+				line-height:2em;
+			}
+			img {
+				width: 200px;
+			}
+			.fa {
+				margin-top: 20px;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				border-radius: 50%;
+				color:aliceblue;
+				background-color: rgba(37,36,36,0.7);
+				transition-duration: 500ms;
+			}
+			
+		}
+		.person:hover {
+			color:white;
+			
+			
+		.fa:hover {
+				background-color:$active-color;
+			}}
+	}
+}
+//end section our team
