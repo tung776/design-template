@@ -6,6 +6,9 @@ $active-color: #e41b17;
 $link-color:#D9CDCE;
 $text-color: #3B3A3A;
 $background-color: #D4D0D0;
+h1, h2, h3, h4, .lead {
+	font-family: 'Roboto Condensed', sans-serif;
+}
 .active-color {
 	color: $active-color!important;
 }
@@ -51,6 +54,10 @@ $background-color: #D4D0D0;
 	color: $active-color;
 }
 @media (max-width: 767px) {
+	.navbar-inverse .navbar-nav > li > a {
+		padding-top:10px;
+		padding-bottom: 10px;
+	}
 	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
 		background-color: $active-color;
@@ -80,11 +87,12 @@ $background-color: #D4D0D0;
 //end carsourel
 //wellcome
 .wellcome {
-	margin:60px 0;
+	margin:50px 0;
 	line-height: 2;
 	color: $text-color;
 	h2 {
 		font-weight: bold;
+		padding-bottom: 20px;
 		span {
 			color: $active-color;
 		}
@@ -308,6 +316,12 @@ $background-color: #D4D0D0;
 			margin-right: 5px;
 			width: 300px;
 		}
+		@media (max-width: 767px) {
+			.form-control {
+				margin: 10px auto;
+				width: 400px;
+			}
+		}
 		button {
 			border-radius: 0;
 			
@@ -315,7 +329,6 @@ $background-color: #D4D0D0;
 	}
 }
 //end section subcrible
-
 //statistic
 #statistic {
 	
