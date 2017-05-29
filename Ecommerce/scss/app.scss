@@ -1,0 +1,40 @@
+/* CSS Document */
+$background-menu-color: #333333;
+$light-text-color: #E4E1E1;
+$active-color: #E89205;
+//framework
+.active-color {
+	color: $active-color;
+}
+//end framework
+
+//navbar
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: $active-color;
+    color: $light-text-color;
+}
+.dropdown-menu .divider {
+	background-color: $active-color;
+}
+.dropdown-menu {
+	background-color: #333333;
+	color: $light-text-color;
+	li > a {
+		color: $light-text-color;
+		min-width: 200px;
+		-web-transition: all 200ms ease-in-out;
+		-moz-transition: all 200ms ease-in-out;
+		transition: all 200ms ease-in-out;
+	}
+	li > a:focus,
+	li > a:hover {
+		background-color: $active-color;
+		color: $light-text-color;
+		padding-left: 30px;
+		font-weight: bold;
+	}
+	
+}
+
+//end navbar
