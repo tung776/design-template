@@ -389,6 +389,15 @@ $background-color: #D4D0D0;
 	.overlay {
 		min-height: 300px;
 		color: #E9E6E6;
+		textarea {
+			height: 108px;
+		}
+		textarea,
+		input {
+			background:rgba(173,171,171,0.7);
+			color: #E4DEDE;
+			border: none;
+		}
 	}
 }
 //end contact
@@ -411,7 +420,57 @@ $background-color: #D4D0D0;
 	
 }
 //end our client
-
+//begin footer
+#footer{
+	background: #333333;
+	color:#aaa;
+	padding-top: 20px;
+	a {
+		color: #aaa;		
+	}
+	a:hover {
+		color: #fff;
+	}
+	
+	h3 {
+		color:#0449B4;
+		letter-spacing: 1px;
+		margin: 30px;
+	}
+	.three-columns {		
+		overflow: hidden;		
+		li {
+			float: left;
+			width: 33.33%;
+			padding: 5px 0;
+		}
+	}
+	.social-list {
+		overflow:hidden;
+		margin:20px 0 10px;
+		li {
+			float:left;
+			margin-right: 3px;
+			opacity: 0.7;
+			filter:alpha(opacity = 70);
+			-webkit-transition: all 200ms ease-in-out;
+			-moz-transition: all 200ms ease-in-out;
+			transition: all 200ms ease-in-out;
+		}
+		li:hover {
+			opacity: 1;
+			filter:alpha(opacity = 100);
+		}
+	}
+	.coppyright {
+		margin-top: 20px;
+		background-color:#222;
+		border: 1px solid #101010;
+		padding:10px 0;
+		text-align: center;
+	}
+}
+//end footer
 
 
 

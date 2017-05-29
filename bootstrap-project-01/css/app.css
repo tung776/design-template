@@ -284,6 +284,13 @@
   #contact .overlay {
     min-height: 300px;
     color: #E9E6E6; }
+    #contact .overlay textarea {
+      height: 108px; }
+    #contact .overlay textarea,
+    #contact .overlay input {
+      background: rgba(173, 171, 171, 0.7);
+      color: #E4DEDE;
+      border: none; }
 
 #our-client {
   background-color: #CDCDCB; }
@@ -298,3 +305,42 @@
   #our-client img:hover {
     opacity: 1;
     filter: alpha(opacity=100); }
+
+#footer {
+  background: #333333;
+  color: #aaa;
+  padding-top: 20px; }
+  #footer a {
+    color: #aaa; }
+  #footer a:hover {
+    color: #fff; }
+  #footer h3 {
+    color: #0449B4;
+    letter-spacing: 1px;
+    margin: 30px; }
+  #footer .three-columns {
+    overflow: hidden; }
+    #footer .three-columns li {
+      float: left;
+      width: 33.33%;
+      padding: 5px 0; }
+  #footer .social-list {
+    overflow: hidden;
+    margin: 20px 0 10px; }
+    #footer .social-list li {
+      float: left;
+      margin-right: 3px;
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out; }
+    #footer .social-list li:hover {
+      opacity: 1;
+      filter: alpha(opacity=100); }
+  #footer .coppyright {
+    margin-top: 20px;
+    background-color: #222;
+    border: 1px solid #101010;
+    padding: 10px 0;
+    text-align: center; }
