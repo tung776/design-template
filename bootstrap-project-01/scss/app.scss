@@ -484,7 +484,42 @@ h1, h2, h3, h4, .lead {
 	}
 }
 //end footer
-
+//begin section option-toolbox
+#option-box {
+	position: fixed;
+	top:100px;
+	left:0;
+	z-index: 9999;
+	.color-option {
+		float: left;
+		background:#333;
+		padding:10px;
+		width: 200px;
+		border: 4px solid $active-color;
+		color: #fff;
+		display: none;
+		-webkit-transition: all 200ms ease-in-out;
+		-moz-transition: all 200ms ease-in-out;
+		transition: all 200ms ease-in-out;
+		ul {
+			li {
+				width: 15px;
+				height: 15px;
+				display: inline-block;
+				margin-right: 3px;
+			}
+		}
+	}
+	
+	.gear-ckeck {
+		padding: 5px;
+		background-color: $active-color;
+		color: #fff;
+		cursor: pointer;
+	}
+	
+}
+//end section tool-box
 
 
 
