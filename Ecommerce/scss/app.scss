@@ -1,25 +1,33 @@
 $active-color: #02bbd2;
 $light-text-color: #fff;
+$focus-color: rgba(255,229,0,1.00);
 //framework
-h1, h2, h3, h4 {
+* {
 	color: $light-text-color;
+}
+h1, h2, h3, h4 {
 	font-weight: bold;
 	line-height: 2;
 }
 p, i, span {
-	color: $light-text-color;
 	line-height: 2;
 }
 
-//@media(max-width:767px) {
-//	a, span, p {
-//		font-size: 12px;
-//	}
-//}
+@media(max-width:767px) {
+	a, span, p {
+		font-size: 12px;
+	}
+}
 .overlay {
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0,0,0,0.40);
+		background-color: rgba(0,0,0,0.30);
+}
+.active-color {
+	color: $active-color!important;
+}
+.focus-color {
+	color: $focus-color!important;
 }
 //end framework
 //header
@@ -49,15 +57,15 @@ p, i, span {
 			
 		}
 		@media(max-width: 767px){
-				.navbar-right {
-					width: 50%;
-					text-align: right;
-				}
-				.navbar-left {
-					width: 50%;
-					text-align: left;
-				}
+			.navbar-right {
+				width: 58.3%;
+				text-align: right;
 			}
+			.navbar-left {
+				width: 41.6%;
+				text-align: left;
+			}
+		}
 		.navbar-left:hover,
 		.navbar-right:hover {
 			letter-spacing: 1.2px;
@@ -75,18 +83,22 @@ p, i, span {
 			}
 		}
 		.fa {
-			    background-color: rgba(0,0,0,0.4);
-				border-radius: 50%;
-				width: 40px;
-				height: 40px;
-				line-height: 40px;
-				text-align: center;
+			background-color: rgba(0,0,0,0.4);
+			border-radius: 50%;
+			border: 1px solid rgba(0,0,0,0.8);
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			-webkit-transition-duration: 300ms;
+			-moz-transition-duration: 300ms;
+			transition-duration: 300ms;
 		}
 		.fa:hover {
-			    color: $active-color;
-				-webkit-box-shadow: 0px 0px 13px 2px $active-color;
-				-moz-box-shadow: 0px 0px 13px 2px $active-color;
-				box-shadow: 0px 0px 13px 2px $active-color;
+			color: $active-color;
+			-webkit-box-shadow: 0px 0px 13px 2px $active-color;
+			-moz-box-shadow: 0px 0px 13px 2px $active-color;
+			box-shadow: 0px 0px 13px 2px $active-color;
 		}
 		
 	}
@@ -97,11 +109,11 @@ p, i, span {
 				width: 300px;
 				height: 160px;
 			}
-			
 		}
 	}
 	#menu {
 		padding-bottom: 0;
+		-webkit-box-shadow: 0px 0px 13px 2px #000000;
 		.navbar {
 			margin-bottom:0;
 			.fa-user {
@@ -111,11 +123,90 @@ p, i, span {
 				color: $light-text-color;
 			}
 		}
+		.navbar-toggle .icon-bar {
+			background-color: #FFFFFF;
+		}
+		.navbar-header {
+			background-color:rgba(0,0,0,0.4);
+		}
 		.logo {
 			height: 45px;
 			width: 95px;
+		}
+		.nav>li>a:focus,
+		.nav>li>a:hover {
+			background-color:rgba(0,0,0,0.6);
+			-webkit-box-shadow: 0px 0px 13px 2px $active-color;
+			-moz-box-shadow: 0px 0px 13px 2px $active-color;
+			box-shadow: 0px 0px 13px 2px $active-color;
+		}
+		.dropdown-menu .divider {
+			background-color: #000000;
+		}
+		.dropdown-menu>li>a:focus,
+		.dropdown-menu>li>a:hover {
+			background-color:rgba(0,0,0,0.40);
+			-webkit-box-shadow: 0px 0px 13px 2px $active-color;
+			-moz-box-shadow: 0px 0px 13px 2px $active-color;
+			box-shadow: 0px 0px 13px 2px $active-color;
+		}
+		.dropdown-menu {
+			background-color:rgba(0,0,0,0.5);
 		}
 		
 	}
 }
 //end header
+//wellcome
+#wellcome {
+	h1, p, span, strong {
+		color:#2A2A2A;
+	}
+	padding: 30px 0;
+}
+
+//end wellcome
+
+//our service
+#our-service {
+	background: url(../images/main-bg.jpg) center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	.overlay {
+		width: 100%;
+		height: 100%;
+		padding: 30px 0;
+		h1 {
+			margin-bottom: 30px;
+		}
+		.service-box {
+			border: 1px solid rgba(0,0,0,0);
+			border-radius: 10px;
+			padding:10px 2px;
+			-webkit-transition-duration: 300ms;
+			-moz-transition-duration: 300ms;
+			transition-duration: 300ms;
+			min-height: 400px;
+			
+			.fa {
+				border-radius: 50%;
+				border: 2px solid #02bbd2;
+				width: 120px;
+				height: 120px;
+				line-height: 120px;
+			}
+		}
+		.service-box:hover {
+			background-color: $active-color;
+			.fa {
+				color: #fff;
+				-webkit-box-shadow: 0px 0px 13px 2px #fff;
+				-moz-box-shadow: 0px 0px 13px 2px #fff;
+				box-shadow: 0px 0px 13px 2px #fff;
+			}
+		}
+	}
+	
+}
+//end our service
