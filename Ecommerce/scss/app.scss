@@ -51,7 +51,7 @@ p, i, span {
 //end framework
 //header
 #header {
-	background: url(../images/bg.jpg) no-repeat center;
+	background: url(../images/SonPU.jpg) no-repeat center;
 	
 	.head {
 		background-color: rgba(0,0,0,0.40);
@@ -186,7 +186,7 @@ p, i, span {
 
 //our service
 #our-service {
-	background: url(../images/main-bg.jpg) center no-repeat fixed;
+	background: url(../images/SonCongNghiep.jpg) center no-repeat fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -253,7 +253,7 @@ p, i, span {
 //end categories
 
 #popular-product {
-	background: url(../images/main-bg.jpg) no-repeat center fixed;
+	background: url(../images/son2k.jpg) no-repeat center fixed;
 	@include background-size;
 	.overlay {
 		padding: 10px 0;
@@ -293,7 +293,7 @@ p, i, span {
 //end testimonial
 //contact us
 #contact-us {
-	background:url(../images/main-bg.jpg) center no-repeat fixed;
+	background:url(../images/SonNgoaiThat.jpg) center no-repeat fixed;
 	@include background-size;
 	.overlay {
 		padding: 30px 0;
@@ -334,7 +334,7 @@ p, i, span {
 //end contact us
 //footer
 #footer {
-	background:url(../images/main-bg.jpg) center no-repeat fixed;
+	background:url(../images/SonNgoaiThat.jpg) center no-repeat fixed;
 	@include background-size;
 	.overlay {
 		padding: 30px 0;
@@ -374,3 +374,12 @@ p, i, span {
 			
 	}
 }
+//======================================================================================
+//Product.html
+//======================================================================================
+@import "_product.scss";
+//======================================================================================
+//end Product.html
+//======================================================================================
+
+
