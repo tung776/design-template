@@ -309,6 +309,8 @@ p, i, span {
     border: 1px solid #fff !important;
     padding-bottom: 20px;
     margin: 20px 3px;
+    position: relative;
+    overflow: hidden;
     -webkit-transition-duration: 300ms;
     -moz-transition-duration: 300ms;
     transition-duration: 300ms; }
@@ -316,6 +318,15 @@ p, i, span {
       max-width: 90%;
       margin-top: 20px;
       margin-bottom: 20px; }
+    #list-product .list-products .product-box .product-overlay {
+      position: absolute;
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      top: auto;
+      bottom: -44px;
+      left: 0;
+      z-index: 6; }
   #list-product .list-products .product-box:last-child {
     margin-right: 0; }
   #list-product .list-products .product-box:hover {
