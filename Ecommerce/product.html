@@ -160,13 +160,27 @@
 				</div>
 			</div>
 			<div class="col-lg-9">
+				<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+									<form id = "search-form" action = "/product/search" method = "POST">
+										<div class="col-sm-8">
+											<input name = "search" type="text" class="form-control" plcaceholder = "search product">
+										</div>
+										<div class="col-sm-4">
+											<button type = "submit" class="btn btn-success form-control">search</button>
+										</div>
+
+									</form>
+						</div>
+				</div>
 				<div class = "list-products">
 					<div class="col-lg-4 col-sm-6">
 						<div class="product-box">
 							<h3 class = "text-success">Lót PU-01</h3>
 							<img src="images/SonPU.jpg" alt="">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dicta reprehenderit qui eaque culpa provident rerum nihil, aliquid ratione eveniet rem numquam quibusdam sint quam id est, autem possimus distinctio.</p>
-							<button class="btn btn-lg btn-primary">Đặt hàng</button>
+							<a class="btn btn-success">Đặt hàng</a>
+							<a class="btn btn-primary">Chi Tiết</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-sm-6">

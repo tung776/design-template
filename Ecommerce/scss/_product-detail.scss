@@ -2,38 +2,38 @@
 	background-color: #2F2F2F;
 	padding: 10px 30px;
 	.product-detail-box{
-		overflow: hidden;
-		position: relative;
+		background-color: rgba(0,0,0,0.6);
+		padding: 10px 5px;
 		img {
 			width: 90%;
 			margin-left: 5%;
 			margin-right: 5%;
 		}
 		.star, .price {
-			padding-bottom: 30px;
-			padding-top:30px;
-			width:50%;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			
 		}
-//		.star {
-//			float: left;
-//		}
-//		.price {
-//			float:right;
-//		}
+		.star {
+			padding-right: 10px;
+			.fa {
+				color: #FFE500;
+			}
+		}
+		.price {
+			padding-left: 10px;
+		}
 		.description {
 			margin: 10px 5px;
 			position: relative;
-			background-color:rgba(0,0,0,0.6);
 		}
 	}
 	.category-box {
-		background-color: rgba(31,31,31,0.3);
+		
 		padding: 20px 10px;
 		text-align: left;
 		border-radius: 5px;
-		border: 1px solid #ffffff;
-		
-		
+		border: 1px solid #ffffff;		
 		li {
 			padding:10px;
 			border-radius: 5px;
